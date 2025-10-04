@@ -9,7 +9,18 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class ExampleSubsystem extends SubsystemBase {
   /** Creates a new ExampleSubsystem. */
-  public ExampleSubsystem() {}
+
+  // TODO: Initialize a DifferentialDrive variable
+  // TODO: Initialize four CANSparkMax motors
+  public ExampleSubsystem() {
+    // TODO: Set motor current limits
+    // TODO: Set the rear left and right motors to be followers
+    // TODO: Set one side of the motors to be inverted 
+    // TODO: Assign the DifferentialDrive variable to a new DifferentialDrive object passing in the two front motors
+    // TODO: Pass in a max speed 
+  }
+
+  // TODO: Create an arcadeDrive method, taking in speed and rotation 
 
   /**
    * Example command factory method.
