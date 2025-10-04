@@ -20,11 +20,10 @@ import edu.wpi.first.wpilibj2.command.button.Trigger;
  */
 public class RobotContainer {
   // The robot's subsystems and commands are defined here...
-  private final ExampleSubsystem m_exampleSubsystem = new ExampleSubsystem();
+  // TODO: initialize subsystems (driveSubsystem, elevatorSubsystem, manipulatorSubsystem)
 
   // Replace with CommandPS4Controller or CommandJoystick if needed
-  private final CommandXboxController m_driverController =
-      new CommandXboxController(OperatorConstants.kDriverControllerPort);
+  // TODO: initialize controller (CommandXboxController) 
 
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
@@ -49,6 +48,8 @@ public class RobotContainer {
     // Schedule `exampleMethodCommand` when the Xbox controller's B button is pressed,
     // cancelling on release.
     m_driverController.b().whileTrue(m_exampleSubsystem.exampleMethodCommand());
+    
+    // TODO: configure bindings for the CommandXboxController. Button bindings are up to you, just ensure that they are valid. Bindings should include Arcade Drive, changing position of elevator, and shooting coral 
   }
 
   /**
