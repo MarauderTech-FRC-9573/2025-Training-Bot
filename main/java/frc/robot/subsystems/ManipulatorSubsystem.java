@@ -9,11 +9,15 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class ManipulatorSubsystem extends SubsystemBase { 
     // TODO: Create one Talon motor 
-    
+    private final TalonSRX talon;
     public ManipulatorSubsystem() {
         // TODO: Assign the Talon Motor
+        talon = new TalonSRX(1);
 
     }
 
     // TODO: Create a method to run the motor 
+    public void runMotor(double speed) {
+        talon.set(speed);
+    }
 }
